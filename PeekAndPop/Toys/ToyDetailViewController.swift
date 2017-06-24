@@ -12,12 +12,12 @@ class ToyDetailViewController: UIViewController {
 	
 	@IBOutlet weak var toyLabel: UILabel!
 	
-	var toy: Toy?
+	var toy: Toy!
 	
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-		toyLabel.text = toy?.name
+		toyLabel.text = toy!.name
 	}
 	
 }

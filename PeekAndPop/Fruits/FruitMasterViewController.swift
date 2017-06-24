@@ -29,7 +29,7 @@ extension FruitMasterViewController: UIViewControllerPreviewingDelegate {
 	
 	func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
 		for fruitImageView in fruitImageViews where fruitImageView.point(inside: location, with: nil) {
-			let controller = storyboard?.instantiateViewController(withIdentifier: "FruitDetailViewController") as! FruitDetailViewController
+			let controller = storyboard!.instantiateViewController(withIdentifier: "FruitDetailViewController") as! FruitDetailViewController
 			controller.image = fruitImageView.image
 			return controller
 		}
@@ -38,10 +38,6 @@ extension FruitMasterViewController: UIViewControllerPreviewingDelegate {
 	
 	func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
 		navigationController?.pushViewController(viewControllerToCommit, animated: true)
-	}
-	
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-		print("bob:", type(of: sender))
 	}
 	
 }

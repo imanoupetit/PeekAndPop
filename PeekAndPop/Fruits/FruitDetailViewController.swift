@@ -11,6 +11,7 @@ import UIKit
 class FruitDetailViewController: UIViewController {
 
 	@IBOutlet weak var imageView: UIImageView!
+	
 	var image: UIImage!
 	
 	override func viewDidLoad() {
