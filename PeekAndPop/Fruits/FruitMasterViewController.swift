@@ -31,6 +31,8 @@ extension FruitMasterViewController: UIViewControllerPreviewingDelegate {
 		for fruitImageView in fruitImageViews where fruitImageView.point(inside: location, with: nil) {
 			let controller = storyboard!.instantiateViewController(withIdentifier: "FruitDetailViewController") as! FruitDetailViewController
 			controller.image = fruitImageView.image
+			// If necessary, you can force the height of the preview view
+			//controller.preferredContentSize = CGSize(width: 0.0, height: 200)
 			return controller
 		}
 		return nil
