@@ -31,8 +31,8 @@ extension FruitMasterViewController: UIViewControllerPreviewingDelegate {
 	func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
 		for imageView in imageViews {
 			// Convert fruitImageView's frame inside stack view to corresponding frame inside view
-			guard let stackView = imageView.superview as? UIStackView else { continue }
-			let sourceRect = view.convert(imageView.frame, from: stackView)
+			guard let superview = imageView.superview else { continue }
+			let sourceRect = previewingContext.sourceView.convert(imageView.frame, from: superview)
 			guard sourceRect.contains(location) else { continue }
 			
 			previewingContext.sourceRect = sourceRect
