@@ -23,19 +23,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="2ZC-1L-eJE">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2ZC-1L-eJE">
                                 <rect key="frame" x="16" y="72" width="343" height="587"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mandarine" translatesAutoresizingMaskIntoConstraints="NO" id="mxA-7Q-irV" customClass="FruitImageView" customModule="PeekAndPop" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="293.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="288.5"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fruit du dragon" translatesAutoresizingMaskIntoConstraints="NO" id="apO-VN-99b" customClass="FruitImageView" customModule="PeekAndPop" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="293.5" width="343" height="293.5"/>
+                                        <rect key="frame" x="0.0" y="298.5" width="343" height="288.5"/>
                                     </imageView>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2ZC-1L-eJE" secondAttribute="bottom" constant="8" symbolic="YES" id="PRp-9G-cQq"/>
                             <constraint firstItem="2ZC-1L-eJE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Wmf-Uq-YRI"/>
@@ -69,7 +69,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XiX-LK-iNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1886" y="536"/>
+            <point key="canvasLocation" x="-1858" y="915"/>
         </scene>
         <!--Peek & pop-->
         <scene sceneID="8bM-fN-o6s">
@@ -190,6 +190,33 @@
                                             <segue destination="MLS-ip-LB3" kind="show" id="Lbu-Gn-Q2E"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="NUS-PO-DdK" detailTextLabel="AuW-ff-XKP" style="IBUITableViewCellStyleSubtitle" id="60G-Og-U8g">
+                                        <rect key="frame" x="0.0" y="211" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="60G-Og-U8g" id="a35-z1-tia">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Peek &amp; pop programmatically" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NUS-PO-DdK">
+                                                    <rect key="frame" x="16" y="5" width="225" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Launched from a collection view cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AuW-ff-XKP">
+                                                    <rect key="frame" x="16" y="25.5" width="205.5" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Gqq-7Q-IdW" kind="show" id="6AW-fI-RCi"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -202,7 +229,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OLZ-vZ-Ybq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1060" y="536"/>
+            <point key="canvasLocation" x="-1031" y="915"/>
         </scene>
         <!--Detail-->
         <scene sceneID="0Fe-Zg-bjq">
@@ -462,6 +489,91 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7hc-27-LdZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-24" y="1662"/>
+        </scene>
+        <!--Person Master Collection View Controller-->
+        <scene sceneID="T7M-Pw-bG9">
+            <objects>
+                <collectionViewController id="Gqq-7Q-IdW" customClass="PersonMasterCollectionViewController" customModule="PeekAndPop" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="0Dq-Od-AJk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XnZ-Bc-s9f">
+                            <size key="itemSize" width="256" height="233"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="d4B-Xb-7Zp" customClass="PersonCell" customModule="PeekAndPop" customModuleProvider="target">
+                                <rect key="frame" x="59.5" y="0.0" width="256" height="233"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="256" height="233"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMQ-bb-rMr">
+                                            <rect key="frame" x="8" y="8" width="240" height="217"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailingMargin" secondItem="gMQ-bb-rMr" secondAttribute="trailing" id="16P-Y4-0PP"/>
+                                    <constraint firstItem="gMQ-bb-rMr" firstAttribute="top" secondItem="d4B-Xb-7Zp" secondAttribute="topMargin" id="7BP-8C-k8W"/>
+                                    <constraint firstAttribute="bottomMargin" secondItem="gMQ-bb-rMr" secondAttribute="bottom" id="HBq-Ld-sr8"/>
+                                    <constraint firstItem="gMQ-bb-rMr" firstAttribute="leading" secondItem="d4B-Xb-7Zp" secondAttribute="leadingMargin" id="c2I-2q-vor"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="label" destination="gMQ-bb-rMr" id="Klh-Cc-4YX"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Gqq-7Q-IdW" id="shX-0q-keh"/>
+                            <outlet property="delegate" destination="Gqq-7Q-IdW" id="WMW-2F-8hE"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3r-z2-p3g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="2399"/>
+        </scene>
+        <!--Person Detail Collection View Controller-->
+        <scene sceneID="OLS-4G-mrd">
+            <objects>
+                <viewController storyboardIdentifier="PersonDetailCollectionViewController" id="KCd-RK-7GP" customClass="PersonDetailCollectionViewController" customModule="PeekAndPop" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oeh-KM-xL5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wi3-Lf-9J9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uoW-Xn-tDT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2xq-t0-9Zx">
+                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2xq-t0-9Zx" firstAttribute="centerY" secondItem="uoW-Xn-tDT" secondAttribute="centerY" id="ebJ-VA-xlg"/>
+                            <constraint firstItem="2xq-t0-9Zx" firstAttribute="centerX" secondItem="uoW-Xn-tDT" secondAttribute="centerX" id="oZL-kE-cxZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="2xq-t0-9Zx" id="0Wa-LJ-2m3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNg-GW-uTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="2399"/>
         </scene>
         <!--Toy-->
         <scene sceneID="5gb-zh-5Tn">
