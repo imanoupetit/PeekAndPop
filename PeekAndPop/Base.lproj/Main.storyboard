@@ -26,10 +26,10 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2ZC-1L-eJE">
                                 <rect key="frame" x="16" y="72" width="343" height="587"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mandarine" translatesAutoresizingMaskIntoConstraints="NO" id="mxA-7Q-irV" customClass="FruitImageView" customModule="PeekAndPop" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mandarine" translatesAutoresizingMaskIntoConstraints="NO" id="mxA-7Q-irV">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="288.5"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fruit du dragon" translatesAutoresizingMaskIntoConstraints="NO" id="apO-VN-99b" customClass="FruitImageView" customModule="PeekAndPop" customModuleProvider="target">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fruit du dragon" translatesAutoresizingMaskIntoConstraints="NO" id="apO-VN-99b">
                                         <rect key="frame" x="0.0" y="298.5" width="343" height="288.5"/>
                                     </imageView>
                                 </subviews>
@@ -45,8 +45,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Fruits" id="9Lz-uq-Gag"/>
                     <connections>
-                        <outletCollection property="fruitImageViews" destination="mxA-7Q-irV" collectionClass="NSMutableArray" id="BIA-Ip-MmL"/>
-                        <outletCollection property="fruitImageViews" destination="apO-VN-99b" collectionClass="NSMutableArray" id="3nV-6g-aZa"/>
+                        <outletCollection property="imageViews" destination="mxA-7Q-irV" collectionClass="NSMutableArray" id="BIA-Ip-MmL"/>
+                        <outletCollection property="imageViews" destination="apO-VN-99b" collectionClass="NSMutableArray" id="3nV-6g-aZa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

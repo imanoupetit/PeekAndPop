@@ -14,10 +14,11 @@
 		C76B41831EFE8D65009CC93D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76B41821EFE8D65009CC93D /* Assets.xcassets */; };
 		C76B41861EFE8D65009CC93D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76B41841EFE8D65009CC93D /* LaunchScreen.storyboard */; };
 		C76B418E1EFE8F09009CC93D /* FruitDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B418D1EFE8F09009CC93D /* FruitDetailViewController.swift */; };
-		C76B41901EFE90EE009CC93D /* FruitImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B418F1EFE90EE009CC93D /* FruitImageView.swift */; };
 		C76B41931EFEA578009CC93D /* CarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B41921EFEA578009CC93D /* CarTableViewController.swift */; };
 		C76B41961EFEA7FA009CC93D /* CarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B41951EFEA7FA009CC93D /* CarDetailViewController.swift */; };
 		C7976EB81EFEB0A700192806 /* ToyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7976EB71EFEB0A700192806 /* ToyTableViewController.swift */; };
+		C79902A51EFEC47700E5F639 /* PersonMasterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79902A41EFEC47700E5F639 /* PersonMasterCollectionViewController.swift */; };
+		C79902A81EFF14A000E5F639 /* PersonDetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79902A71EFF14A000E5F639 /* PersonDetailCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +30,12 @@
 		C76B41851EFE8D65009CC93D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C76B41871EFE8D65009CC93D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C76B418D1EFE8F09009CC93D /* FruitDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitDetailViewController.swift; sourceTree = "<group>"; };
-		C76B418F1EFE90EE009CC93D /* FruitImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitImageView.swift; sourceTree = "<group>"; };
 		C76B41921EFEA578009CC93D /* CarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewController.swift; sourceTree = "<group>"; };
 		C76B41951EFEA7FA009CC93D /* CarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailViewController.swift; sourceTree = "<group>"; };
 		C7976EB71EFEB0A700192806 /* ToyTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToyTableViewController.swift; sourceTree = "<group>"; };
 		C7976EBA1EFEB10600192806 /* ToyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToyDetailViewController.swift; sourceTree = "<group>"; };
+		C79902A41EFEC47700E5F639 /* PersonMasterCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonMasterCollectionViewController.swift; sourceTree = "<group>"; };
+		C79902A71EFF14A000E5F639 /* PersonDetailCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailCollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				C76B41911EFEA559009CC93D /* Fruits */,
 				C76B41941EFEA57C009CC93D /* Cars */,
 				C7976EB91EFEB0F700192806 /* Toys */,
+				C79902A61EFEC47E00E5F639 /* Animals */,
 				C76B417F1EFE8D65009CC93D /* Main.storyboard */,
 				C76B41821EFE8D65009CC93D /* Assets.xcassets */,
 				C76B41841EFE8D65009CC93D /* LaunchScreen.storyboard */,
@@ -83,7 +86,6 @@
 			children = (
 				C76B417D1EFE8D65009CC93D /* FruitMasterViewController.swift */,
 				C76B418D1EFE8F09009CC93D /* FruitDetailViewController.swift */,
-				C76B418F1EFE90EE009CC93D /* FruitImageView.swift */,
 			);
 			path = Fruits;
 			sourceTree = "<group>";
@@ -104,6 +106,15 @@
 				C7976EBA1EFEB10600192806 /* ToyDetailViewController.swift */,
 			);
 			path = Toys;
+			sourceTree = "<group>";
+		};
+		C79902A61EFEC47E00E5F639 /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				C79902A41EFEC47700E5F639 /* PersonMasterCollectionViewController.swift */,
+				C79902A71EFF14A000E5F639 /* PersonDetailCollectionViewController.swift */,
+			);
+			path = Animals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,13 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C76B418E1EFE8F09009CC93D /* FruitDetailViewController.swift in Sources */,
+				C79902A51EFEC47700E5F639 /* PersonMasterCollectionViewController.swift in Sources */,
+				C79902A81EFF14A000E5F639 /* PersonDetailCollectionViewController.swift in Sources */,
 				C76B417E1EFE8D65009CC93D /* FruitMasterViewController.swift in Sources */,
 				C76B41961EFEA7FA009CC93D /* CarDetailViewController.swift in Sources */,
 				C76B41931EFEA578009CC93D /* CarTableViewController.swift in Sources */,
 				C76B417C1EFE8D65009CC93D /* AppDelegate.swift in Sources */,
 				C7976EB81EFEB0A700192806 /* ToyTableViewController.swift in Sources */,
 				C75A9D861EFEB549006B79F7 /* ToyDetailViewController.swift in Sources */,
-				C76B41901EFE90EE009CC93D /* FruitImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +242,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -285,6 +299,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
