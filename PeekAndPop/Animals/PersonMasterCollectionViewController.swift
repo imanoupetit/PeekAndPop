@@ -78,10 +78,8 @@ class PersonMasterCollectionViewController: UICollectionViewController, UICollec
 	// MARK: - UIViewControllerPreviewingDelegate
 	
 	func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
-		let locationInView = collectionView!.convert(location, from: view)
-		
 		guard let collectionView = collectionView,
-			let indexPath = collectionView.indexPathForItem(at: locationInView),
+			let indexPath = collectionView.indexPathForItem(at: location),
 			let cell = collectionView.cellForItem(at: indexPath) else {
 			return nil
 		}
